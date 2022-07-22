@@ -48,7 +48,7 @@ basicCC <- ggplot(dd2,aes(x=result,y=prcnt*100,fill=Sex))
 basicCC + geom_bar(stat="identity", position = "dodge")
 ```
 
-Upon looking at the frequency-based bar chart, it shows that there are around 1800 living females and 1400 living males in the study. Despite there being around 200 more women than males in the study sample, it still shows that more men were reported dead than females. In the other bar chart, it also shows majority of the reported deaths were males. Numerical results will presumably confirm the premise that more men are dying than women. 
+Upon looking at the frequency-based bar chart, it shows that there are around 1800 living females and 1400 living males in the study. Despite there being around 200 more women than males in the study sample, it still shows that more men were reported dead than females. In the other bar chart, it also shows majority of the reported deaths were males. 
 
   
 ## Numerical results
@@ -73,3 +73,4 @@ As far as the chi-squared test is concerned, those results coincide with the res
 
 ## Conclusions
 
+By using various charts and tables, we have attempted to answer the question of whether COVID deaths are independent of gender (this was using a sample of people from Korea). Graphical results, specifically the proportion based bar chart, showed a variation in COVID deaths that showed more deaths in men. The provided numerical results showed precise percentages to further confirm the claim that more men appear to die from COVID. Exact death counts by sex were provided by the inferential results and provided a low p-value. As such, we can conclude that there is likely a correlation between COVID deaths and ones sex.
