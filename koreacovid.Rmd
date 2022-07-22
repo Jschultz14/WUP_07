@@ -38,9 +38,17 @@ According to this chart, more men than women have died from this virus with 44 m
 
 ## We create two bar charts - one based on frequency and the other on percent, use ggplot commands to do this
 
-`
+```{r}
+dd2 <- kRdata %>% group_by(result,Sex) %>% summarize(count=n()) %>% mutate(prcnt=count/sum(count))
 
-  
+basicC <- ggplot(dd2,aes(x=result,y=count,fill=Sex))
+basicC + geom_bar(stat="identity",position="dodge")
+
+basicCC <- ggplot(dd2,aes(x=result,y=prcnt*100,fill=Sex)) 
+basicCC + geom_bar(stat="identity", position = "dodge")
+```
+
+Upon looking at the frequency-based bar chart, it shows that there are around 1800 living females and 1400 living males in the study. Despite there being around 200 more women than males in the study sample, it still shows that more men were reported dead than females. In the other bar chart, it also shows majority of the reported deaths were males. 
 
 
 
