@@ -63,8 +63,13 @@ The first table looks at the data as values of the result. From this, it appears
 
 ## Inferential results 
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
-
+As far as the chi-squared test is concerned, those results coincide with the results found in the frequency chart and those in the numerical chart. The Fisher Exact Test, however, gives us the best explanation for the results, as it shows a p-value of .0009 for the Korea COVID data. The odds ratio listed at the bottom at 2.3 also offers that men are 2.3 times more likely to die due to COVID-19.
 
 ## Conclusions
 
